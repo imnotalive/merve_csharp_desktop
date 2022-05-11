@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31BDCB00-8EA4-4C9B-929B-C646F36C6E68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>merve_csharp</RootNamespace>
+    <AssemblyName>merve_csharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>merve_csharp.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebBrowserVersiyonTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowserVersiyonTest.Designer.cs">
+      <DependentUpon>WebBrowserVersiyonTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_000_Classlar\Global.cs" />
+    <Compile Include="_000_Classlar\Misafirler.cs" />
+    <Compile Include="_000_Classlar\SecimListe.cs" />
+    <Compile Include="_000_Classlar\TCKimlikNoKontrol.cs" />
+    <Compile Include="_020_Excel_OLEDB_Baglanti_ve_Veri_Okuma_Class\ExcelBaglanOku.cs" />
+    <Compile Include="_020_Excel_OLEDB_Baglanti_ve_Veri_Okuma_Class\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_020_Excel_OLEDB_Baglanti_ve_Veri_Okuma_Class\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_003_DataTable_Bu_Satir_Baska_Tabloya_Ait_Hatasi\form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_003_DataTable_Bu_Satir_Baska_Tabloya_Ait_Hatasi\form1.Designer.cs">
+      <DependentUpon>form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_002_FolderBrowserDialog_Kullanimi\FolderBrowserDialogKullanimi_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_002_FolderBrowserDialog_Kullanimi\FolderBrowserDialogKullanimi_.Designer.cs">
+      <DependentUpon>FolderBrowserDialogKullanimi_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_001_Kurulu_Antivirus_Bulmak\AntivirusBulmak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_001_Kurulu_Antivirus_Bulmak\AntivirusBulmak.designer.cs">
+      <DependentUpon>AntivirusBulmak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_004_Thread_Sleep_ile_Islem_Suresini_Uzatmak\thread_sleep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_004_Thread_Sleep_ile_Islem_Suresini_Uzatmak\thread_sleep.Designer.cs">
+      <DependentUpon>thread_sleep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_005_TextBox_sadece_sayi_harf_girisi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_005_TextBox_sadece_sayi_harf_girisi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_006_String_Sayisal_Deger_Kontrolu\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_006_String_Sayisal_Deger_Kontrolu\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_007_Kelime_heceleme_islemi\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_007_Kelime_heceleme_islemi\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_008_Gridview_den_textbox_a_Veri_cekme\ListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_008_Gridview_den_textbox_a_Veri_cekme\ListeForm.Designer.cs">
+      <DependentUpon>ListeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_008_Gridview_den_textbox_a_Veri_cekme\TextBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_008_Gridview_den_textbox_a_Veri_cekme\TextBoxForm.Designer.cs">
+      <DependentUpon>TextBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_009_NotiftyIcon_Kullanimi\AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_009_NotiftyIcon_Kullanimi\AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_010_LINQ_to_XML\LINQ_to_XML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_010_LINQ_to_XML\LINQ_to_XML.Designer.cs">
+      <DependentUpon>LINQ_to_XML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_011_Sayilari_Roma_Rakamina_Cevir\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_011_Sayilari_Roma_Rakamina_Cevir\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_012_kombinasyon_hesaplama\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_012_kombinasyon_hesaplama\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_013_permutasyon_hesaplama\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_013_permutasyon_hesaplama\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_014_Tooltip_Kullanimi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_014_Tooltip_Kullanimi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_015_Extension_Methods\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_015_Extension_Methods\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_015_Extension_Methods\MyExtensionMethods.cs" />
+    <Compile Include="_016_ComboBox_TXT_Dosyai_ile_Doldurma\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_016_ComboBox_TXT_Dosyai_ile_Doldurma\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_016_ComboBox_TXT_Dosyai_ile_Doldurma\Sistem\GlobalClass.cs" />
+    <Compile Include="_017_Kill_Proccess_Program_Kapatmak\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_017_Kill_Proccess_Program_Kapatmak\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_018_Listeler_Arasındaki_Farkları_Bulmak\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_018_Listeler_Arasındaki_Farkları_Bulmak\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_019_Milisaniye_Bilgisini_Saniye_ve_Dakikaya_Cevirmek\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_019_Milisaniye_Bilgisini_Saniye_ve_Dakikaya_Cevirmek\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_021_Rastgele_Sifre_Olusturma\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_021_Rastgele_Sifre_Olusturma\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_022_Ozel_MessageBox_Yapimi\AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_022_Ozel_MessageBox_Yapimi\AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_022_Ozel_MessageBox_Yapimi\MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_022_Ozel_MessageBox_Yapimi\MyMessageBox.Designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_023_XML_Islemleri\XML_AnaForm.cs" />
+    <Compile Include="_023_XML_Islemleri\XML_AnaForm.Designer.cs">
+      <DependentUpon>XML_AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_023_XML_Islemleri\XML_Class.cs" />
+    <Compile Include="_023_XML_Islemleri\XML_Diger_Islemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_023_XML_Islemleri\XML_Diger_Islemler.Designer.cs">
+      <DependentUpon>XML_Diger_Islemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_024_Drag_And_Drop\dragdrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_024_Drag_And_Drop\dragdrop.Designer.cs">
+      <DependentUpon>dragdrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_025_Coklu_Excel_Okuma\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_025_Coklu_Excel_Okuma\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_026_UserControl_Kullanimi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_026_UserControl_Kullanimi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_026_UserControl_Kullanimi\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_026_UserControl_Kullanimi\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_027_Listboxlar_Arasi_Surukle_Birak\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_027_Listboxlar_Arasi_Surukle_Birak\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_028_List_DataGridView_ListBox_Baglamak\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_028_List_DataGridView_ListBox_Baglamak\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_029_Formdaki_Tum_TextBox_Nesnelerini_Temizlemek\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_029_Formdaki_Tum_TextBox_Nesnelerini_Temizlemek\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_030_Process_islemleri_Neler_Yapılabilir\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_030_Process_islemleri_Neler_Yapılabilir\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_031_Calisan_Uygulamanin_Sahibi_Kim\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_031_Calisan_Uygulamanin_Sahibi_Kim\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_032_Serialization_Deserialization\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_032_Serialization_Deserialization\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_032_Serialization_Deserialization\Personel.cs" />
+    <Compile Include="_033_TC_Kimlikno_Sorgulama\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_033_TC_Kimlikno_Sorgulama\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_034_Exceptions\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_034_Exceptions\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_035_Klasordeki_Dosya_Bilgilerini_Almak\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_035_Klasordeki_Dosya_Bilgilerini_Almak\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_036_Kredi_Karti_Tipini_Bulma\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_036_Kredi_Karti_Tipini_Bulma\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_037_Kredi_Karti_Luhn_Algoritmasi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_037_Kredi_Karti_Luhn_Algoritmasi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_038_Kredi_Karti_Bilgileri\Form1.cs" />
+    <Compile Include="_038_Kredi_Karti_Bilgileri\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_039_Dinamik_Form_ve_Nesne_Uretme\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_039_Dinamik_Form_ve_Nesne_Uretme\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_040_Metin_Belgesi_Okuma_Yazma\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_040_Metin_Belgesi_Okuma_Yazma\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_041_Yardim_Formlari_Hazırlamak\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_041_Yardim_Formlari_Hazırlamak\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_041_Yardim_Formlari_Hazırlamak\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_041_Yardim_Formlari_Hazırlamak\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_042_MD5_Sifreleme\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_042_MD5_Sifreleme\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_046_SHA512_Sifreleme\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_046_SHA512_Sifreleme\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_045_SHA384_Sifreleme\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_045_SHA384_Sifreleme\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_044_SHA256_Sifreleme\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_044_SHA256_Sifreleme\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_043_SHA1_Sifreleme\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_043_SHA1_Sifreleme\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WebBrowserVersiyonTest.resx">
+      <DependentUpon>WebBrowserVersiyonTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_020_Excel_OLEDB_Baglanti_ve_Veri_Okuma_Class\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_003_DataTable_Bu_Satir_Baska_Tabloya_Ait_Hatasi\form1.resx">
+      <DependentUpon>form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_002_FolderBrowserDialog_Kullanimi\FolderBrowserDialogKullanimi_.resx">
+      <DependentUpon>FolderBrowserDialogKullanimi_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_001_Kurulu_Antivirus_Bulmak\AntivirusBulmak.resx">
+      <DependentUpon>AntivirusBulmak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="_004_Thread_Sleep_ile_Islem_Suresini_Uzatmak\thread_sleep.resx">
+      <DependentUpon>thread_sleep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_005_TextBox_sadece_sayi_harf_girisi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_006_String_Sayisal_Deger_Kontrolu\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_007_Kelime_heceleme_islemi\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_008_Gridview_den_textbox_a_Veri_cekme\ListeForm.resx">
+      <DependentUpon>ListeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_008_Gridview_den_textbox_a_Veri_cekme\TextBoxForm.resx">
+      <DependentUpon>TextBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_009_NotiftyIcon_Kullanimi\AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_010_LINQ_to_XML\LINQ_to_XML.resx">
+      <DependentUpon>LINQ_to_XML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_011_Sayilari_Roma_Rakamina_Cevir\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_012_kombinasyon_hesaplama\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_013_permutasyon_hesaplama\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_014_Tooltip_Kullanimi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_015_Extension_Methods\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_016_ComboBox_TXT_Dosyai_ile_Doldurma\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_017_Kill_Proccess_Program_Kapatmak\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_018_Listeler_Arasındaki_Farkları_Bulmak\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_019_Milisaniye_Bilgisini_Saniye_ve_Dakikaya_Cevirmek\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_021_Rastgele_Sifre_Olusturma\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_022_Ozel_MessageBox_Yapimi\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_022_Ozel_MessageBox_Yapimi\MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_023_XML_Islemleri\XML_AnaForm.resx">
+      <DependentUpon>XML_AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_023_XML_Islemleri\XML_Diger_Islemler.resx">
+      <DependentUpon>XML_Diger_Islemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_024_Drag_And_Drop\dragdrop.resx">
+      <DependentUpon>dragdrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_025_Coklu_Excel_Okuma\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_026_UserControl_Kullanimi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_026_UserControl_Kullanimi\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_027_Listboxlar_Arasi_Surukle_Birak\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_028_List_DataGridView_ListBox_Baglamak\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_029_Formdaki_Tum_TextBox_Nesnelerini_Temizlemek\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_030_Process_islemleri_Neler_Yapılabilir\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_031_Calisan_Uygulamanin_Sahibi_Kim\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_032_Serialization_Deserialization\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_033_TC_Kimlikno_Sorgulama\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_034_Exceptions\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_035_Klasordeki_Dosya_Bilgilerini_Almak\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_036_Kredi_Karti_Tipini_Bulma\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_037_Kredi_Karti_Luhn_Algoritmasi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_038_Kredi_Karti_Bilgileri\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_039_Dinamik_Form_ve_Nesne_Uretme\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_040_Metin_Belgesi_Okuma_Yazma\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_041_Yardim_Formlari_Hazırlamak\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_041_Yardim_Formlari_Hazırlamak\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_042_MD5_Sifreleme\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_046_SHA512_Sifreleme\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_045_SHA384_Sifreleme\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_044_SHA256_Sifreleme\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_043_SHA1_Sifreleme\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_023_XML_Islemleri\XML\Test.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_010_LINQ_to_XML\myXML.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_016_ComboBox_TXT_Dosyai_ile_Doldurma\AracMarkaları.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_023_XML_Islemleri\XML\Books.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_023_XML_Islemleri\XML\Personeller.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_023_XML_Islemleri\XML\Proje.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_041_Yardim_Formlari_Hazırlamak\YardimDosyalari\Yardim.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
